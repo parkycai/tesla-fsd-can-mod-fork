@@ -142,7 +142,7 @@ Because the Legacy variant transmits follow distance differently, it uses a **sp
 | 29                   | Normal  |
 | 30                   | Hurry   |
 
-HW3 & HW4 Profiles
+### HW3 & HW4 Profiles
 
 
 
