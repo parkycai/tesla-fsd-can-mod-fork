@@ -1,3 +1,39 @@
+# 说明
+
+本项目为[https://gitlab.com/Starmixcraft/tesla-fsd-can-mod](https://gitlab.com/Starmixcraft/tesla-fsd-can-mod)的fork，进行了一些修改以适配自己购买的开发板和国内车机。
+
+遵循原项目和相关协议要求，本项目继续以GPL-3.0协议开源。
+
+所用开发板和配件：
+
+1. ARDUINO NANO
+
+2. MCP2515 CAN总线模块
+
+3. 若干根母对母杜邦线
+
+连线参考：
+
+| MCP2515模块 | Arduino Nano |
+| ----------- | ------------ |
+| VCC         | 5V           |
+| GND         | GND          |
+| CS          | D10          |
+| SO (MISO)   | D12          |
+| SI (MOSI)   | D11          |
+| SCK         | D13          |
+
+| X179 Pin | MCP2515模块 |
+| -------- | ----------- |
+| 13       | CAN-H       |
+| 14       | CAN-L       |
+
+使用步骤：
+
+1. 连线
+2. 使用Arduino IDE烧录修改后的代码
+3. 用杜邦线一头接到车上的X179的13,14针脚，另一头接入MCP2515模块
+
 # CanFeather – Tesla FSD CAN Bus Enabler
 
 > **Why is this public?** Some sellers charge up to 500 € for a solution like this. In our opinion, that is massively overpriced. The board costs around 20 €, and even with labor factored in, a fair price is no more than 50 €. This project exists so nobody has to overpay.
