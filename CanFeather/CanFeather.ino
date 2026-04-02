@@ -283,8 +283,8 @@ void setup() {
   MCP2515::ERROR e = mcp.setBitrate(CAN_500KBPS, MCP_8MHZ);
   if (e != MCP2515::ERROR_OK) Serial.println("setBitrate failed");
 
-  uint32_t* ids = handler->filterIds();
-  uint8_t count = handler->filterIdCount();
+  const uint32_t* ids = handler->filterIds();
+  const uint8_t count = handler->filterIdCount();
   mcp.setConfigMode();
   mcp.setFilterMask(MCP2515::MASK0, false, 0x7FF);
   mcp.setFilter(MCP2515::RXF0, false, ids[0]);
